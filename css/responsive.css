@@ -88,14 +88,11 @@
     /*info menu footer allineati opposti*/
     footer{
         display: flex;
-    }
-    footer ul{
-        justify-content: flex-end;
+        justify-content: space-between;
     }
     address{
-        align-items: flex-start;
-        margin-left: 0;
-
+        text-align: left;
+        
     }
     
 }
