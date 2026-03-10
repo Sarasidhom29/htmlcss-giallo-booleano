@@ -16,23 +16,26 @@
 
     /*compare testo*/
     .recipe-origin {
-	display: inline;
+	    display: inline;
     }
 
     /*aumento grandezza titolo*/
     .recipe-title {
-	font-size: 20px;
+        font-size: 20px;
     }
 
     /*info ricetta a griglia*/
-    .quick-notes {
-	display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap: 10px;
+    .quick-notes ul {
+	    display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .quick-notes li{
-        flex-basis: calc(100% / 3 - 64px / 3);
+        flex-basis: calc(100% / 3);
+    }
+
+    .pin{
+        flex-grow: 1;
     }
 
     /*estenzione btn social*/
@@ -51,4 +54,48 @@
         margin-right: 10px;
     }
 
+}
+
+
+/*Modalità Desktop*/
+@media screen and (min-width: 993px) {
+
+    /*aumento grandezza titolo*/
+    .recipe-title {
+	    font-size: 30px;
+    }
+
+    /*info ricetta colonna*/
+    .quick-notes ul {
+	    display: block;
+    }
+    
+    /*video con info accanto*/
+    .recipe-card{
+        display: flex;
+    }
+    .recipe-video{
+        width: calc(80%);
+        height: calc(40vw);
+    }
+
+
+    /*nomi social*/
+    .social-networks .label {
+	    display: inline;
+    }
+
+    /*info menu footer allineati opposti*/
+    footer{
+        display: flex;
+    }
+    footer ul{
+        justify-content: flex-end;
+    }
+    address{
+        align-items: flex-start;
+        margin-left: 0;
+
+    }
+    
 }
