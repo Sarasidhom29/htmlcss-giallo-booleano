@@ -1,1 +1,54 @@
 /* Soluzione qui */
+
+/*Modalità Tablet*/
+@media screen and (min-width: 769px) {
+
+    /*logo a sinistra*/
+    #topbar {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    /*aumento padding*/
+    main {
+        padding: 30px;
+    }
+
+    /*compare testo*/
+    .recipe-origin {
+	display: inline;
+    }
+
+    /*aumento grandezza titolo*/
+    .recipe-title {
+	font-size: 20px;
+    }
+
+    /*info ricetta a griglia*/
+    .quick-notes {
+	display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    }
+    .quick-notes li{
+        flex-basis: calc(100% / 3 - 64px / 3);
+    }
+
+    /*estenzione btn social*/
+    .btn{
+        flex-basis: calc(100% / 5);
+    }
+
+    /*banner pubblicitario*/
+    .ads {
+        display: block;
+    }
+
+    /*immagine circondata da testo*/
+    .presentation img {
+        float: left;
+        margin-right: 10px;
+    }
+
+}
